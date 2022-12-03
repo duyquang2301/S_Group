@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,100;1,500;1,700&display=swap');
+body {
+  background: linear-gradient(to right, #005c97, #363795);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+  background: #fff;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+}
+.title{
+    font-family: 'Nerko One', cursive;
+    margin: 0;
+}
+input {
+  width: 80%;
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 2px 0px;
+  color: rgb(32,32,32);
+}
+.forgotPass {
+  display: block;
+    text-decoration: none;
+    color: rgb(32,32,32);
+    text-align: left;
+    margin: 10px;
+    width: 80%;
+
+}
+.button {
+    width: 85%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: #0082c8;
+    color: #fff;
+    font-size: 18px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: none;
+    font-family: 'Nerko One', cursive;
+    display: inline-block;
+}
+.sign {
+    color: #0082c8;
+    text-decoration: none;
+    margin: 10px;
+}
