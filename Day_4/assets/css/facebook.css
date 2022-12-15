@@ -176,7 +176,7 @@ body {
   bottom: 15px;
   border-radius: 5px;
   font-size: 12px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .content .icon:hover {
   background-color: rgb(199, 205, 209);
@@ -228,7 +228,7 @@ body {
   font-size: 12px;
 }
 .action .btn-edit {
-  background-color:  rgb(59, 59, 59);
+  background-color: rgb(59, 59, 59);
   padding: 10px;
   border: none;
   margin-right: 5px;
@@ -250,15 +250,15 @@ body {
   padding: 10px;
   font-size: 10px;
   height: 55%;
-  color: rgba(245, 245, 245, 0.705)
+  color: rgba(245, 245, 245, 0.705);
 }
 .item span:hover {
   background-color: rgb(58, 57, 55);
   border-radius: 8px;
   cursor: pointer;
-  color: rgba(245, 245, 245, 0.705)
+  color: rgba(245, 245, 245, 0.705);
 }
-#post{
+#post {
   color: #2e89ff;
   border-radius: 0px;
   border-bottom: #2e89ff 3px solid;
@@ -279,4 +279,84 @@ body {
   display: flex;
   list-style: none;
   padding-left: 15px;
+}
+.chat {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: fixed;
+  bottom: 15px;
+  right: 10px;
+}
+.box-chat {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.box-chat1 i {
+  width: 32px;
+  height: 35px;
+  padding: 10px;
+  font-size: 15px;
+  background-color: rgb(58, 57, 55);
+  border-radius: 50px;
+  cursor: pointer;
+  color: antiquewhite;
+}
+.box-chat-user {
+  position: relative;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.box-chat-user:hover .chat-message,
+.box-chat-user:hover .cancel {
+  display: block;
+}
+.user-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.cancel {
+  position: absolute;
+  top: -4px;
+  right: 0;
+  background-color: rgb(58, 57, 55);
+  padding: 1px 5px;
+  font-size: 1rem;
+  border-radius: 50%;
+  display: none;
+}
+.chat-message {
+  position: absolute;
+  bottom: 0;
+  left: -168px;
+  background-color: rgb(59, 59, 59);
+  padding: 12px;
+  border-radius: 8px;
+  max-width: 150px;
+  display: none;
+  color: white;
+}
+.chat-message::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 16px solid transparent;
+  border-left: 16px solid #fff;
+  border-bottom: 16px solid transparent;
+  top: 50%;
+  right: 0;
+  transform: translateX(100%);
+}
+
+.body-content{
+  height: 100vh;
+  background-color: rgb(59, 59, 59);
 }
