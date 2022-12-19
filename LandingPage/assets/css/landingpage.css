@@ -74,3 +74,8 @@ a:hover.discover-btn {
     color: #e52f37;
     transition: all 0.5s;
 }
+
+.content {
+    height: 1000vh;
+    width: 100%;
+}
