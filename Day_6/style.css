@@ -6,7 +6,7 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    margin-top: 25px;
+    align-items: center;
     margin-left: 15px;
 }
 .navbar .nav-left i {
@@ -41,6 +41,11 @@
     font-size: 20px;
     font-weight: 700;
     color: white;
+}
+.navbar .nav-right a.btn-get:hover {
+    background-color: white;
+    color: #171321;
+    border: 1px solid #171321;
 }
 .navbar .nav-right i {
     display: none;
