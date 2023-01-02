@@ -1,3 +1,4 @@
+
 .header {
   background-color: var(--white-color);
   width: 100%;
@@ -81,16 +82,6 @@
   border-radius: 4px;
   cursor: pointer;
 }
-
-@media (max-width: 1239px) {
-  .header__navbar-icon {
-    display: block;
-  }
-  .header__navbar-list {
-    display: none;
-  }
-}
-
 .home__section {
   position: relative;
   background-image: url(../img/bg0.jpg);
@@ -455,18 +446,22 @@
 
 /* feedback section */
 .feedback__section {
-  background: var(--gray-background);
+  background-color: var(--gray-background);
 }
+
 .feedback__section-wrap {
   justify-content: space-between;
   align-items: center;
 }
+
 .feedback__review-title {
   text-align: left;
 }
+
 .feedback__review-text {
   margin-bottom: 20px;
 }
+
 .review-platform {
   position: relative;
 }
@@ -476,59 +471,83 @@
   font-weight: bold;
   color: #071e55;
 }
+
 .review-platform-rating {
   margin-bottom: 20px;
 }
+
 .review-platform-rating i {
   color: #fdcc28;
   font-size: 1.6rem;
 }
+
 .rating-border::before {
   content: "";
   width: 1px;
   height: 58px;
-  background-color: #cecece;
+  background-color: #CECECE;
   position: absolute;
   left: 92%;
 }
+
 .card {
   background-color: var(--white-color);
-  margin: 20px;
-  margin-right: 30px;
+  margin: 20px 0;
   box-shadow: 5px 5px 15px rgb(0 0 0 / 10%);
   border-left: 6px solid #27b36a;
 }
+
 .card-body {
+  display: none;
   padding: 20px 25px 5px;
   animation: opacity ease-in-out 0.4s;
 }
-.card-body p {
+
+@keyframes opacity {
+  from {
+      opacity: 0.4;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* .card-body.card-body-active {
+  display: block;
+} */
+
+.card-body p{
   color: #7c8595;
   font-size: 2rem;
   font-style: italic;
 }
+
 .card-header {
   display: flex;
   align-items: center;
   cursor: pointer;
   padding: 15px 25px;
 }
+
 .tester-img {
   max-width: 65px;
   border-radius: 50%;
 }
-.tester-name,
-.card-header span {
+
+.tester-name, .card-header span {
   font-weight: 700;
 }
+
 .tester-name {
   margin-left: 20px;
   color: #071e55;
 }
+
 .card-header span {
   font-size: 1.7rem;
   color: #27b36a;
 }
+
 /* work section */
 .work__section {
   background-color: var(--white-color);
