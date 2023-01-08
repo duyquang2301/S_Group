@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Test crud Javascript</h1>
+    <hr>
+    <form action="" id="form1">
+        <input type="text" id="name">
+        <input type="text" id="email">
+        <input type="text" id="salary">
+        <input type="text" id="city">
+        
+        <input type="submit" id="submit" value="submit">
+    </form>
+
+    <form action="" id="form2">
+        <table border="1">
+            <tr>
+                <th>Full Name</th>
+                <th>Email ID</th>
+                <th>Salary</th>
+                <th>City</th>
+                <th>Action</th>
+              </tr>
+              <tr id = "render">
+                
+              </tr>
+        </table>
+    </form>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="name">
+    <input type="text" id="age">
+    <input type="submit" value="Submit" id="submit">
+    <div id="render">
+
+    </div>
+</body>
+<script>
+    const name = document.getElementById('name');
+    const age = document.getElementById('age');
+    const btnSubmit = document.getElementById('submit')
+    const render = document.getElementById('render')
+    let arr = [];
+
+    btnSubmit.addEventListener('click',() => {
+        arr.push({
+            id : Date.now(),
+            name : name.value,
+            age : age.value,
+        });
+        render.innerHTML = '';
+        arr.forEach((item)=> {
+            render.innerHTML = render.innerHTML +
+            `<p> ${item.name}</p>
+            <p> ${item.age}</p>
+            <button id=${item.id} onClick=DeleteElement(this)>Delete</button>`
+        });
+    })
+    let DeleteElement = (item) => {
+        arr = arr.filter( x => x.id != item.id); 
+        render.innerHTML = '';
+        arr.forEach((item)=> {
+            render.innerHTML = render.innerHTML +
+            `<p> ${item.name}</p>
+            <p> ${item.age}</p>
+            <button id=${item.id} onClick=DeleteElement(this)>Delete</button>`
+        });
+    }
+
+
+
+</script>
+
+</html> -->
+
+
